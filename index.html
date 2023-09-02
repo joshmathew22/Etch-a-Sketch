@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href = "style.css">
+    <script defer src="javascript.js"></script>
 </head>
-<body>
-    <div id="container"></div>
-    <script src="javascript.js"></script>
+<body style = "background-color: #FFFFE0;">
+
+    <div id="wrapper">
+        <h1>Etch-a-sketch</h1>
+        <div id="container"></div>
+        <div id = "content">
+            <div class="size">
+                <h2>size: 
+                    <button onClick="small()">small</button>
+                    <button onClick="med()">medium</button>
+                    <button onClick="large()">large</button>
+                    <button onClick="xlarge()">x-large</button>
+                </h2>
+            </div>
+            <div class="color">
+                <h2>color: 
+                    <button onClick="black()">black</button>
+                    <button onClick="blue()">blue</button>
+                    <button onClick="red()">red</button>
+                    <button onClick="random()">random</button>
+                </h2>
+            </div>
+            <button onClick="erase()">clear</button>
+        </div>
+    </div>
+    <p>created by josh</p>
 </body>
 </html>
